@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 and 2</title>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+            <h1>Exercise 1 and 2</h1>
+            <p><a href="/index.html">back to index page</a></p>
+            <ul>
+                <li>
+                    <a href="#exercise-1">Exercise 1</a>
+                </li>
+                <li>
+                    <a href="#exercise-2">Exercise 2</a>
+                </li>
+                <li>
+                    <a href="three-four.html">Exercise 3</a>
+                </li>
+                <li>
+                    <a href="three-four.html">Exercise 4</a>
+                </li>
+                <li>
+                    <a href="#exercise-5">Exercise 5</a>
+                </li>
+                <li>
+                    <a href=""></a>Exercise 6
+                </li>
+                <li>
+                    <a href=""></a>Exercise 7
+                </li>
+                <li>
+                    <a href=""></a>Exercise 8
+                </li>
+                <li>
+                    <a href=""></a>Exercise 9
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div id="exercise-1">
+            <h2>Exercise 1</h2>
+            <p>
+                <ol >
+                    <li>HTML and body tags</li>
+                    <li>A title for the page</li>
+                    <li>A header h1 with a heading</li>
+                    <li>A paragraph p with some text</li>
+                    <li>An ordered list ol with three list items li</li>
+                    <li>An image img with a source (any image URL)</li>
+                    <li>a link a to an external website</li>
+                </ol>
+            </p>
+            
+            <p>
+                To finish this first exercice, here is a picture of what your code should
+                looks like:<br>
+                <img src="first-ex.JPG" alt="html avec vscode"><br>
+                And a link to go on ChatGPT website, my favorite basics's teacher:<br>
+                <a href="https://chat.openai.com/"
+                   title="the best free teacher online">ChatGPT's website link</a>
+            </p>
+        </div>
+
+        <div id="exercise-2">
+            <h2>Exercise 2</h2>
+            <!-- CHANGE LETTER TO NUMBER WITH CSS -->
+            <p>HTML forms, create an HTML form that includes the following
+               elements:
+                <ol>
+                    <li>A form tag with a "POST" method</li>
+                    <li>Input a fields for a name, email and password</li>
+                    <li>Radio buttons for gender (male, female, other)</li>
+                    <li>A dropdown (select) for selecting a country</li>
+                    <li>Checkboxes for selecting a country</li>
+                    <li>A submit button to submit the form</li>
+                </ol>
+            </p>
+        </div>
+
+        <div>
+            <h3>1.2. A form tag with a "POST" method</h3>
+            <!-- TO APPLY EXERCISE 5, GO ON GITHUB REPO + COMMIT + BRANCHE -->
+            <form action="process_data.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text"
+                       name="username"
+                       id="username"
+                       placeholder="Enter your username"
+                       autocomplete="username">
+                <label for="email">Email:</label>
+                <input type="email"
+                       name="email"
+                       id="email"
+                       placeholder="Enter your email"
+                       autocomplete="email">
+                <label for="password">Password:</label>
+                <input type="password"
+                       name="password"
+                       id="password"
+                       placeholder="Enter your password"
+                       autocomplete="current-password">
+                
+                <input type="submit" value="submit">
+            </form>
+        </div>
+
+        <div>
+            <h3>3. Here is a redio button to choose your gender</h3>
+            <form>
+                <p>What kind of human gender are you?</p>
+                <input type="radio" id="woman" name="gender" value="woman" checked>
+                <label for="woman">Woman</label><br>
+            
+                <input type="radio" id="man" name="gender" value="man">
+                <label for="man">Man</label><br>
+            
+                <input type="radio" id="both" name="gender" value="both">
+                <label for="both">Both</label><br>
+            
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h3>4. A dropdown (select) for selecting a country</h3>
+            <form>
+                <label for="country">Select your country:</label>
+                <select id="country" name="country" autocomplete="country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <option value="france">France</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h3>5. Checkboxes for selecting a country</h3>
+            <form>
+                <p>Select the countries you have visited:</p>
+                <input type="checkbox" id="usa" name="countries[]" value="usa">
+                <label for="usa">United States</label>
+            
+                <input type="checkbox" id="egypt" name="countries[]" value="egypt">
+                <label for="egypt">Egypt</label>
+            
+                <input type="checkbox" id="uk" name="countries[]" value="uk">
+                <label for="uk">United Kingdom</label>
+            
+                <input type="checkbox" id="asia" name="countries[]" value="asia">
+                <label for="asia">Asia</label>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div>
+            <h3>6. A submit button to submit the form</h3>
+            <p>Already done in 1 to 5 exercises !</p>
+        </div>
+
+        <div id="exercise-5">
+            <h3>Exercice 5: HTML forms and validation</h3>
+            <p>
+                Enhance the HTML form from exercise 2 by adding form validation. Make sure that
+                the name and email field must contain a valid address. Display appropriate error
+                messages if the form is submitted incorrectly.
+             </p>
+        </div>
+        
+        <div>
+            <h3>Exercice 5: HTML forms and validation</h3>
+            <p>
+                Enhance the HTML form from exercise 2 by adding form validation. Make sure that
+                the name and email field must contain a valid address. Display appropriate error
+                messages if the form is submitted incorrectly.
+             </p>
+        </div>
+
+    </main>
+
+    <footer>
+        <span>
+            by house.Oftaz, all rights reserved
+        </span>
+    </footer>
+
+</body>
+</html>
